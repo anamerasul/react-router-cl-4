@@ -7,14 +7,14 @@ import './Father.css'
 const Father = (props) => {
 
     console.log(props)
-    const { house } = props
+    const { house, ornament } = props
     return (
         <div>
             <h2>Father </h2>
             <p>House{house}</p>
 
             <div style={{ display: 'flex' }}>
-                <MySelf house={house}></MySelf>
+                <MySelf house={house} ornament={ornament}></MySelf>
                 <Brother house={house}></Brother>
                 <Sister house={house}></Sister>
 
