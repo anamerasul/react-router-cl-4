@@ -6,15 +6,14 @@ import './Father.css'
 
 const Father = (props) => {
 
-    console.log(props)
-    const { house, ornament } = props
+    const { house } = props
     return (
         <div>
             <h2>Father </h2>
             <p>House{house}</p>
 
             <div style={{ display: 'flex' }}>
-                <MySelf house={house} ornament={ornament}></MySelf>
+                <MySelf house={house}></MySelf>
                 <Brother house={house}></Brother>
                 <Sister house={house}></Sister>
 
