@@ -4,11 +4,13 @@ import './Special.css'
 
 
 const Special = () => {
-    const ring = useContext(RingContext)
+    const [ornament, house, setHouse] = useContext(RingContext)
     return (
         <div>
             <h5>Special</h5>
-            <p>Gift: {ring}</p>
+            <p>Gift: {ornament}</p>
+            <p>House {house}</p>
+            <button onClick={() => setHouse(house + 1)}>buy</button>
         </div>
     );
 };
